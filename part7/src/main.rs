@@ -56,25 +56,6 @@ fn average(numbers: &Vec<i64>) -> i64 {
 }
 
 fn first_three<'a>(numbers1: &'a Vec<i64>, numbers2: &'a Vec<i64>) -> (&'a [i64], &'a [i64]) {
-    // 👉 TODO Return two slices, one containing the first 3 elements in
-    //    numbers1, and the other containing the first 3 elements in numbers2.
-    //
-    // 💡 TIP 1: You can get slices like this using this syntax:
-    //
-    //        &numbers[0..3]
-    //
-    // 💡 TIP 2: A slice type with a lifetime annotation looks like this:
-    //
-    //        &'a [i64]
-    //
-    // 💡 TIP 3: To introduce lifetime annotations to this function, change its
-    //    declaration to something like the following, depending on how many
-    //    different lifetimes you want to use:
-    //
-    //        fn first_three<'a>
-    //
-    //        fn first_three<'a, 'b>
-    //
-    //        fn first_three<'a, 'b, 'c>
+    
     ( &numbers1[0..3],  &numbers2[0..3])
 }
